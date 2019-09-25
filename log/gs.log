@@ -1,0 +1,191 @@
+as_http_server
+user timer:5 sec:0 usec:5000
+_do_lua_file main.lua: H:\work_sangong\web\web/core/helper.lua:426: 'do' expected near 'if'
+_do_lua_file error
+as_http_server
+user timer:5 sec:0 usec:5000
+as_http_server
+user timer:5 sec:0 usec:5000
+as_http_server
+user timer:5 sec:0 usec:5000
+as_http_server
+user timer:5 sec:0 usec:5000
+as_http_server
+user timer:5 sec:0 usec:5000
+_do_lua_file main.lua: H:\work_sangong\web\web/core/helper.lua:486: ')' expected (to close '(' at line 485) near 'end'
+_do_lua_file error
+as_http_server
+user timer:5 sec:0 usec:5000
+Lua execute error:[string ""]:62: unexpected symbol near 'for'
+Lua execute error:[string ""]:1: attempt to call global 'SetPackageCPath' (a nil value)
+Lua execute error:[string ""]:1: ')' expected near 'SELECT'
+Lua execute error:[string ""]:1: ')' expected near 'SELECT'
+as_http_server
+user timer:5 sec:0 usec:5000
+Lua execute error:[string ""]:62: unexpected symbol near 'for'
+Lua execute error:[string ""]:1: attempt to call global 'SetPackageCPath' (a nil value)
+Lua execute error:[string ""]:1: ')' expected near 'SELECT'
+as_http_server
+user timer:5 sec:0 usec:5000
+Lua execute error:[string ""]:80: unexpected symbol near 'for'
+Lua execute error:[string ""]:1: attempt to call global 'SetPackageCPath' (a nil value)
+Lua execute error:[string ""]:1: ')' expected near 'SELECT'
+as_http_server
+user timer:5 sec:0 usec:5000
+Lua execute error:[string ""]:80: unexpected symbol near 'for'
+Lua execute error:[string ""]:1: attempt to call global 'SetPackageCPath' (a nil value)
+Lua execute error:[string ""]:1: ')' expected near 'SELECT'
+as_http_server
+user timer:5 sec:0 usec:5000
+Lua execute error:[string ""]:80: unexpected symbol near 'for'
+Lua execute error:[string ""]:1: attempt to call global 'SetPackageCPath' (a nil value)
+Lua execute error:[string ""]:1: ')' expected near 'SELECT'
+as_http_server
+user timer:5 sec:0 usec:5000
+Lua execute error:[string ""]:81: unexpected symbol near 'for'
+Lua execute error:[string ""]:1: attempt to call global 'SetPackageCPath' (a nil value)
+Lua execute error:[string ""]:1: ')' expected near 'SELECT'
+as_http_server
+user timer:5 sec:0 usec:5000
+Lua execute error:[string ""]:81: unexpected symbol near 'for'
+Lua execute error:[string ""]:1: attempt to call global 'SetPackageCPath' (a nil value)
+Lua execute error:[string ""]:1: ')' expected near 'SELECT'
+as_http_server
+user timer:5 sec:0 usec:5000
+Lua execute error:[string ""]:81: unexpected symbol near 'for'
+Lua execute error:[string ""]:1: attempt to call global 'SetPackageCPath' (a nil value)
+Lua execute error:[string ""]:1: ')' expected near 'SELECT'
+as_http_server
+user timer:5 sec:0 usec:5000
+Lua execute error:[string ""]:81: unexpected symbol near 'for'
+Lua execute error:[string ""]:1: attempt to call global 'SetPackageCPath' (a nil value)
+Lua execute error:[string ""]:1: attempt to call global 'ExecuteSQL' (a nil value)
+as_http_server
+user timer:5 sec:0 usec:5000
+Lua execute error:[string ""]:1: unfinished string near ''SELECT a.`id`,'
+Lua execute error:[string ""]:1: unfinished string near ''SELECT a.`id`,'
+Lua execute error:[string ""]:1: unfinished string near ''SELECT a.`id`,'
+Lua execute error:[string ""]:1: unfinished string near ''SELECT a.`id`,'
+as_http_server
+user timer:5 sec:0 usec:5000
+Lua execute error:[string ""]:1: unfinished string near ''SELECT a.`id`,'
+as_http_server
+user timer:5 sec:0 usec:5000
+Lua execute error:[string ""]:1: unfinished string near ''SELECT a.`id`,'
+as_http_server
+user timer:5 sec:0 usec:5000
+Lua execute error:[string ""]:84: ')' expected near '...'
+Lua execute error:[string ""]:1: attempt to call global 'SetPackageCPath' (a nil value)
+Lua execute error:[string ""]:1: attempt to call global 'ExecuteSQL' (a nil value)
+as_http_server
+user timer:5 sec:0 usec:5000
+Lua execute error:[string ""]:1: unfinished string near ''SELECT a.`id`,'
+as_http_server
+user timer:5 sec:0 usec:5000
+Lua execute error:[string ""]:1: unfinished string near ''SELECT a.`id`,'
+as_http_server
+user timer:5 sec:0 usec:5000
+Lua execute error:[string ""]:1: unfinished string near ''SELECT a.`id`,'
+Lua execute error:[string ""]:1: unfinished string near ''SELECT a.`id`,'
+as_http_server
+user timer:5 sec:0 usec:5000
+Lua execute error:[string ""]:1: unfinished string near ''SELECT a.`id`,'
+Lua execute error:[string ""]:1: unfinished string near ''SELECT a.`id`,'
+as_http_server
+user timer:5 sec:0 usec:5000
+Lua execute error:[string ""]:1: unfinished string near ''SELECT a.`id`,'
+Lua execute error:[string ""]:1: unfinished string near ''SELECT a.`id`,'
+Lua execute error:[string ""]:1: unfinished string near ''SELECT a.`id`,'
+Lua execute error:[string ""]:1: unfinished string near ''SELECT a.`id`,'
+Lua execute error:[string ""]:1: unfinished string near ''SELECT a.`id`,'
+as_http_server
+user timer:5 sec:0 usec:5000
+as_http_server
+user timer:5 sec:0 usec:5000
+as_http_server evhttp_bind_socket fail:192.168.2.217 443
+as_http_server
+user timer:5 sec:0 usec:5000
+Lua execute error:[string ""]:1: unfinished string near ''SELECT a.`id`,'
+Lua execute error:[string ""]:1: unfinished string near ''SELECT a.`id`,'
+Lua execute error:[string ""]:1: unfinished string near '"SELECT a.`id`,'
+as_http_server
+user timer:5 sec:0 usec:5000
+Lua execute error:[string ""]:1: unfinished string near ''SELECT a.`id`,'
+as_http_server
+user timer:5 sec:0 usec:5000
+as_http_server
+user timer:5 sec:0 usec:5000
+as_http_server
+user timer:5 sec:0 usec:5000
+Lua execute error:[string ""]:82: bad argument #1 to 'execute' (string expected, got table)
+Lua execute error:[string ""]:82: bad argument #1 to 'execute' (string expected, got nil)
+Lua execute error:[string ""]:82: bad argument #1 to 'execute' (string expected, got nil)
+as_http_server
+user timer:5 sec:0 usec:5000
+Lua execute error:[string ""]:82: bad argument #1 to 'execute' (string expected, got nil)
+as_http_server
+user timer:5 sec:0 usec:5000
+_do_lua_file main.lua: H:\work_sangong\web\web/core/helper.lua:472: unexpected symbol near ']'
+_do_lua_file error
+as_http_server
+user timer:5 sec:0 usec:5000
+connect ip:smtp.163.com 465 bev:00506AA8
+connected
+SendData2Client:00506AA8 19
+SendData2Client:00506AA8 12
+SendData2Client:00506AA8 30
+SendData2Client:00506AA8 22
+SendData2Client:00506AA8 33
+SendData2Client:00506AA8 28
+SendData2Client:00506AA8 6
+SendData2Client:00506AA8 197
+SendData2Client:00506AA8 3720
+SendData2Client:00506AA8 5
+SendData2Client:00506AA8 6
+CloseClient bev:00506AA8
+connect ip:smtp.163.com 465 bev:00506548
+connected
+SendData2Client:00506548 19
+SendData2Client:00506548 12
+SendData2Client:00506548 30
+SendData2Client:00506548 22
+SendData2Client:00506548 33
+SendData2Client:00506548 29
+SendData2Client:00506548 6
+SendData2Client:00506548 206
+SendData2Client:00506548 3748
+SendData2Client:00506548 5
+SendData2Client:00506548 6
+CloseClient bev:00506548
+connect ip:smtp.163.com 465 bev:00506548
+connected
+SendData2Client:00506548 19
+SendData2Client:00506548 12
+SendData2Client:00506548 30
+SendData2Client:00506548 22
+SendData2Client:00506548 33
+SendData2Client:00506548 28
+SendData2Client:00506548 6
+SendData2Client:00506548 197
+SendData2Client:00506548 3724
+SendData2Client:00506548 5
+SendData2Client:00506548 6
+CloseClient bev:00506548
+connect ip:smtp.163.com 465 bev:00506AA8
+connected
+SendData2Client:00506AA8 19
+SendData2Client:00506AA8 12
+SendData2Client:00506AA8 30
+SendData2Client:00506AA8 22
+SendData2Client:00506AA8 33
+SendData2Client:00506AA8 29
+SendData2Client:00506AA8 6
+SendData2Client:00506AA8 206
+SendData2Client:00506AA8 3752
+SendData2Client:00506AA8 5
+SendData2Client:00506AA8 6
+CloseClient bev:00506AA8
+as_http_server
+user timer:5 sec:0 usec:5000
+as_http_server
+user timer:5 sec:0 usec:5000

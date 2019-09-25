@@ -1,0 +1,41 @@
+﻿ <div class="comment-wrap">
+    <div class="photo">  
+        
+        {% if sex=="2" then %}
+        <div class="avatar" style="background-image: url('/images/coolgirl.jpg')"></div>
+        {% else %}
+        <div class="avatar" style="background-image: url('/images/coolboy.jpg')"></div>
+        {% end %}
+        
+    </div>
+    <div class="comment-block">
+        <form action="">
+            <textarea name="" id="new_comment" cols="30" rows="3" placeholder="Say somthing..."></textarea>
+            <div align="right"><button type="button" onclick="javascript:comment_post()" class="Button Button--blue"><svg viewBox="0 0 12 12" class="Icon QuestionButton-icon Button-icon Icon--modify" width="14" height="16" aria-hidden="true" style="height: 16px; width: 14px;"><title></title><g><path d="M.423 10.32L0 12l1.667-.474 1.55-.44-2.4-2.33-.394 1.564zM10.153.233c-.327-.318-.85-.31-1.17.018l-.793.817 2.49 2.414.792-.814c.318-.328.312-.852-.017-1.17l-1.3-1.263zM3.84 10.536L1.35 8.122l6.265-6.46 2.49 2.414-6.265 6.46z" fill-rule="evenodd"></path></g></svg>发表评论</button></div>
+        </form>
+    </div>
+</div>
+
+{% for i=1,#comments, 1 do %}
+{% local v=comments[i] %}
+<div class="comment-wrap">
+    <div class="photo">
+    		{% if v.sex=="2" then %}
+        <div class="avatar" style="background-image: url('/images/coolgirl.jpg')"></div>
+        {% else %}
+        <div class="avatar" style="background-image: url('/images/coolboy.jpg')"></div>
+        {% end %}
+    </div>
+    <div class="comment-block">
+        <p class="comment-text">{*v.content*}</p>
+        <div class="bottom-comment">
+            <div class="comment-date">{*v.logtime*}</div>
+            <ul class="comment-actions">
+                <li class="refuse"><a href="javascript:void(0)"  onclick="javascript:comment_refuse({*v.id*})">{*v.refuse*}反对</a></li>
+                <li class="like"><a href="javascript:void(0)" onclick="javascript:comment_like({*v.id*})">{*v.like*}赞</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% end %}
+

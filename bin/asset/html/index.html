@@ -1,0 +1,158 @@
+
+<!doctype html>
+
+<html lang="zh-cn">
+<head>
+<meta charset="UTF-8" />
+<title>lua-web网站</title>
+<link rel="icon" href="images/favicon.png" type="image/png"/>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="styles/print/main.css" rel="stylesheet" type="text/css" media="print">
+<!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!--[if IE 6]>
+<script src="js/belatedPNG.js"></script>
+<script>
+	DD_belatedPNG.fix('*');
+</script>
+<![endif]-->
+
+<script type="text/javascript">
+	function preloadedImages()
+	{
+		heavyImage = new Image();
+		heavyImage[0] = "";
+		heavyImage[1] = "";
+		heavyImage[2] = "";
+		heavyImage[3] = "";
+		heavyImage[4] = "";
+		heavyImage[0].src = "images/bamboo.png";
+		heavyImage[1].src = "images/bodybg.jpg";
+		heavyImage[2].src = "images/bamboo.png";
+		heavyImage[3].src = "images/btmbg.png";
+		heavyImage[4].src = "images/top.png";
+	}	
+	preloadedImages();
+</script>
+
+</head>
+
+<body>
+
+<div style="width:728px;height:90px;margin:0 auto;">
+<div float="right" align="right">
+	<a href="login.html">登录</a>
+	<a href="register.html">注册</a>
+</div>
+</div>
+<div id="wrap">
+
+<section id="top">
+<nav id="mainnav">
+<h1 id="sitename" class="logotext">
+<a href="#">文章列表</a>
+</h1>
+<ul>
+	 {% for i=1,#tabs,1 do %} 
+	 		{% local v = tabs[i] %}
+	 		{% if v.name==tab then %}
+				<li class="active"><a href={* tocode(v.url) *}><span>{* v.name *}</span></a></li>
+			{% else %}
+				<li><a href={* tocode(v.url) *}><span>{* v.name *}</span></a></li>
+			{% end %}
+	 {% end %}
+</ul>
+</nav>
+</section>
+<section id="page">
+<header id="pageheader" class="homeheader">
+<h2 class="sitedescription">
+ 在尘封的记忆里有你的一片田地，长满鲜花和野草，在落日的余晖照应下郁郁葱葱，唯美又浪漫 </h2>
+</header>
+
+<section id="contents">
+
+{% for i, v in ipairs(articles) do %} 
+<article class="post">
+<header class="postheader">
+<h2><a {* [[href="article.html?id=]]..v.id..[["]] *}>{*v.post_title*}</a></h2>
+<p class="postinfo"> 发布于 <time>{* v.post_date *}</time> by <a href="#">{* v.post_author *} </a></p>
+</header>
+<p>{* v.post_desc *}<a {* [[href="article.html?id=]]..v.id..[["]] *} > 全文</a></p>
+<footer class="postfooter">
+<ul>
+<li class="cment"><a href="#">{* v.comment_count *} 评论</a></li>
+<li class="plink"><a href="#">{* v.read_count *} 阅读</a></li>
+</ul>
+</footer>
+</article>
+{% end %}
+
+<div class="blog-nav">
+<ul class="pagination">
+  <li><a {* [[href="index.html?page=]]..(page-1)..[["]] *} class="pre-link"></a></li>
+  {% for i=1,10,1 do %} 
+	  {% if i<=pages then %}
+	  	{% if i==page then %}
+	  		 <li><a class="active" {* [[href="index.html?page=]]..i..[["]] *} >{*i*}</a></li>
+	  	{% else %}  
+	  		<li><a {* [[href="index.html?page=]]..i..[["]] *}>{*i*}</a></li>
+	  	{% end %}  
+	  {% else %}  
+	 		 <li><a href="#" visibility="hidden;">{*i*}</a></li>
+	  {% end %}  
+  {% end %}  
+  <li><a {* [[href="index.html?page=]]..(page+1)..[["]] *} class="next-link"></a></li>
+</ul>
+
+</div>
+
+</section>
+<section id="sidebar">
+<h2>收藏</h2>
+<ul>
+		{% for i, v in ipairs(bookmarks) do %} 
+		<li><a href="{*v.url*}">{*v.name*}</a></li>
+    {% end %}  
+</ul>
+
+<h2>热门</h2>
+<ul>
+		{% for i, v in ipairs(hots) do %} 
+		<li><a {* [[href="article.html?id=]]..v.id..[["]] *}>{*v.post_title*}</a></li>
+    {% end %}  
+</ul>
+
+</section>
+<div class="clear"></div>
+
+<div class="clear"></div>
+</section>
+</div>
+<footer id="pagefooter">
+<div id="f-content">
+<img src="images/bamboo.png" width="96" height="125" alt="bamboo" id="footerimg">
+<div id="social-links">
+  <a href="#" class="fblink">
+    Facebook</a>
+  <a href="#" class="twtlink">
+    
+    Twitter
+  </a>
+</div>
+<div id="credits">
+<p class="sitecredit"> 2019 &amp; All Rights Reserved | www.lua-web.com </p>
+<p class="designcredit"><a href="http://www.beian.miit.gov.cn/" title="桂ICP备19008326号" target="_blank">桂ICP备19008326号</a></p>
+<p class="statistics" align="center">
+	{*count*}次数
+</p>
+</div>
+
+
+</div>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,2 @@
+09-16-19 17:46:58  coreodbc error:LuaSQL: error executing query. MySQL: Table 'blogs.comments' doesn't exist
+09-16-19 18:22:47  coreodbc error:LuaSQL: error executing query. MySQL: Incorrect integer value: '' for column 'docid' at row 1

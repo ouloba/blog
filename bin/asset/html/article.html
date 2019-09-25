@@ -1,0 +1,176 @@
+
+<!doctype html>
+
+<html lang="zh-cn">
+<head>
+<meta charset="UTF-8" />
+<title>lua-web网站</title>
+<link rel="icon" href="images/favicon.png" type="image/png"/>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="styles/print/main.css" rel="stylesheet" type="text/css" media="print">
+<!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!--[if IE 6]>
+<script src="js/belatedPNG.js"></script>
+<script>
+	DD_belatedPNG.fix('*');
+</script>
+<![endif]-->
+<script type="text/javascript">
+	
+	function PostHttpRequest(cmd,obj,func)
+	{
+		var httpRequest = new XMLHttpRequest();
+		httpRequest.open('POST', cmd, true); 
+		httpRequest.setRequestHeader("Content-type","application/json");
+		httpRequest.send(JSON.stringify(obj));
+		
+		/**
+		 * 获取数据后的处理程序
+		 */
+		httpRequest.onreadystatechange = function () {
+		    if (httpRequest.readyState == 4 && httpRequest.status == 200) {		        
+		      func(httpRequest);
+		    }
+		  }
+	}
+	
+	function comment_list()
+	{			
+		var obj = {id:{*docid*}};
+		PostHttpRequest('/blog/comment/list',obj,function(httpRequest){
+			 var objElement = document.getElementById("comments");
+       objElement.innerHTML = httpRequest.responseText;
+		});
+	}
+		
+	function comment_like(id)
+	{			
+		var obj = {id:id};
+		PostHttpRequest('/blog/comment/like',obj,function(httpRequest){
+			var json = httpRequest.responseText;
+      console.log(json);        
+      var retobj = JSON.parse(json)
+      if(retobj.errcode==0){       		        		 
+     		 comment_list();
+    	}else{
+    			alert(retobj.errmsg);
+    	}
+		});
+	}
+	
+	function comment_refuse(id)
+	{			
+		var obj = {id:id};
+		PostHttpRequest('/blog/comment/refuse',obj,function(httpRequest){
+			  var json = httpRequest.responseText;
+        console.log(json);        
+        var retobj = JSON.parse(json)
+        if(retobj.errcode==0){       		        		 
+       		 comment_list();
+      	}else{
+      			alert(retobj.errmsg);
+      	}
+		});
+	}
+		
+	function delete_doc(id)
+	{			
+		var obj = {id:{*docid*}};
+		PostHttpRequest('/blog/delete',obj,function(httpRequest){
+			  var json = httpRequest.responseText;//获取到服务端返回的数据
+        console.log(json);
+        var retobj = JSON.parse(json)
+        window.location.href="/index.html";
+		});
+	}		
+	
+	function comment_post()
+	{			
+		var new_comment=document.getElementById("new_comment").value;
+		//alert("comment_post"+new_comment)
+		var obj = {content:new_comment,id:{*docid*},parentid:0};
+		PostHttpRequest('/blog/comment/post',obj,function(httpRequest){
+			  var json = httpRequest.responseText;
+        console.log(json);
+        //alert(json)
+        var retobj = JSON.parse(json)
+        if(retobj.errcode==0){
+       		 //window.location.href="/article.html?id="+retobj.id
+       		 alert(retobj.errmsg);
+       		 comment_list();
+      	}else{
+      			alert(retobj.errmsg);
+      	}
+		});
+	}	
+	
+	window.onload = comment_list;
+</script>
+</head>
+
+<body>
+<div style="width:728px;height:90px;margin:0 auto;"></div>
+<div id="wrap">
+
+<section id="top">
+<nav id="mainnav">
+<h1 id="sitename" class="logotext">
+<a href="#">全文</a>
+</h1>
+<ul>
+	 {% for i=1,#tabs,1 do %} 
+	 		{% local v = tabs[i] %}
+	 		{% if v.onclick then %}
+				<li><a href={* tocode(v.url) *} onclick={* tocode(v.onclick) *} ><span>{* v.name *}</span></a></li>
+			{%else%}
+				<li><a href={* tocode(v.url) *}><span>{* v.name *}</span></a></li>
+			{%end%}
+	 {% end %}
+</ul>
+</nav>
+</section>
+<section id="page">
+<header id="pageheader" class="homeheader">
+<h2 class="sitedescription">
+ 在尘封的记忆里有你的一片田地，长满鲜花和野草，在落日的余晖照应下郁郁葱葱，唯美又浪漫 </h2>
+</header>
+
+<section id="contents1">
+<h2 class="header"> {{title}}</h2>
+{* doc *}
+
+<div class="comments" id="comments" >
+	   
+</div>
+</section>
+<div class="clear"></div>
+<div class="clear"></div>
+</section>
+</div>
+<footer id="pagefooter">
+<div id="f-content">
+<img src="images/bamboo.png" width="96" height="125" alt="bamboo" id="footerimg">
+<div id="social-links">
+  <a href="#" class="fblink">
+    Facebook</a>
+  <a href="#" class="twtlink">
+    
+    Twitter
+  </a>
+</div>
+<div id="credits">
+<p class="sitecredit"> 2019 &amp; All Rights Reserved | www.lua-web.com </p>
+<p class="designcredit"><a href="http://www.beian.miit.gov.cn/" title="桂ICP备19008326号" target="_blank">桂ICP备19008326号</a></p>
+</div>
+</div>
+
+</footer>
+
+<script type="text/javascript" >			 			
+	
+</script>
+
+</body>
+</html>

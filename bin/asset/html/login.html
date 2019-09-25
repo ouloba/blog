@@ -1,0 +1,119 @@
+
+<!doctype html>
+
+<html lang="zh-cn">
+<head>
+<meta charset="UTF-8" />
+<title>lua-web网站</title>
+<link rel="icon" href="images/favicon.png" type="image/png"/>
+
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="styles/print/main.css" rel="stylesheet" type="text/css" media="print">
+<script type="text/javascript" charset="utf-8" src="md5/md5.js"> </script>
+<!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!--[if IE 6]>
+<script src="js/belatedPNG.js"></script>
+<script>
+	DD_belatedPNG.fix('*');
+</script>
+<![endif]-->
+
+</head>
+
+<body>
+<div style="width:728px;height:90px;margin:0 auto;"></div>
+<div id="wrap">
+
+<section id="top">
+<nav id="mainnav">
+<h1 id="sitename" class="logotext">
+<a href="#"></a>
+</h1>
+</nav>
+</section>
+<section id="page">
+<header id="pageheader" class="homeheader">
+<h2 class="sitedescription">
+ 在尘封的记忆里有你的一片田地，长满鲜花和野草，在落日的余晖照应下郁郁葱葱，唯美又浪漫 </h2>
+</header>
+
+<section id="contents1" align="center">
+<div class="app-location"  width="50%">
+			<div class="line"><span></span></div>
+			<div class="line"><span></span></div>
+			<h2>欢迎来到我的小院子</h2>
+			<div class="line"><span></span></div>
+			<div class="location"><img src="images/location.png" class="img-responsive" alt=""></div>			
+			<form>
+				<input type="text" id="account" class="text" value="E-mail address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'E-mail address';}">
+				<input type="password" id="password"  value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}">
+				<div class="submit"><input type="button" onclick="javascript:login()" value="登录"></div>
+				<div class="clear"></div>
+				<div class="new">
+					<h3><a href="#">忘记密码?</a></h3>
+					<h4><a href="register.html">新用户注册? 注册</a></h4>
+					<div class="clear"></div>
+				</div>
+			</form>
+</div>
+</section>
+<div class="clear"></div>
+<div class="clear"></div>
+</section>
+</div>
+<footer id="pagefooter">
+<div id="f-content">
+<img src="images/bamboo.png" width="96" height="125" alt="bamboo" id="footerimg">
+<div id="social-links">
+  <a href="#" class="fblink">
+    Facebook</a>
+  <a href="#" class="twtlink">
+    
+    Twitter
+  </a>
+</div>
+<div id="credits">
+<p class="sitecredit"> 2010 &amp; All Rights Reserved | www.lae.com </p>
+<p class="designcredit"><a href="http://www.cssmoban.com/" title="网站模板" target="_blank">网站模板</a> collect from www.cssmoban.com</p>
+
+</div>
+</div>
+
+</footer>
+<script type="text/javascript">
+		function login()
+		{
+			var account = document.getElementById("account").value;
+			var pass = document.getElementById("password").value;
+			var password = md5(pass);
+				
+			var obj = {account:account,password:password};
+			var httpRequest = new XMLHttpRequest();//第一步：创建需要的对象
+			httpRequest.open('POST', '/blog/login', true); //第二步：打开连接/***发送json格式文件必须设置请求头 ；如下 - */
+			httpRequest.setRequestHeader("Content-type","application/json");//设置请求头 注：post方式必须设置请求头（在建立连接后设置请求头）var obj = { name: 'zhansgan', age: 18 };
+			httpRequest.send(JSON.stringify(obj));//发送请求 将json写入send中
+			/**
+			 * 获取数据后的处理程序
+			 */
+			httpRequest.onreadystatechange = function () {//请求后的回调接口，可将请求成功后要执行的程序写在其中
+			    if (httpRequest.readyState == 4 && httpRequest.status == 200) {//验证请求是否发送成功
+			    		//alert("login ok:"+httpRequest.responseText);
+			        var json = httpRequest.responseText;//获取到服务端返回的数据			        
+			        var retobj = JSON.parse(json)			        
+			        if(retobj.errcode==0){
+			        	document.cookie = retobj.cookie;
+			        	//alert(retobj.cookie+" "+document.cookie)
+			       	 	window.location.href="/index.html";			       	 
+				      }			      
+				      else{				     	 	
+				      	alert(retobj.errmsg);
+				    }
+			    }
+			};
+		}			
+</script>
+
+</body>
+</html>

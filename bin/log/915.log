@@ -1,0 +1,87 @@
+09-15-19 20:21:01    Execute file1:H:\work_sangong\web\web\bin/logic/data.lua
+09-15-19 20:21:01    Execute file1:H:\work_sangong\web\web\bin/logic/logic.lua
+09-15-19 20:21:01    stack traceback:
+	H:\work_sangong\web\web/core/helper.lua:92: in function <H:\work_sangong\web\web/core/helper.lua:91>
+	[C]: in function 'gsub'
+	H:\work_sangong\web\web/core/helper.lua:473: in function 'escape_square_brackets'
+	H:\work_sangong\web\web\bin/logic/logic.lua:1099: in main chunk
+	[builtin#25]: at 0x60ac3950
+	[C]: in function 'xpcall'
+	H:\work_sangong\web\web/core/helper.lua:907: in function 'MonitorAndDoFile'
+	main.lua:12: in main chunk
+09-15-19 20:52:40    Execute file2:H:\work_sangong\web\web\bin/logic/logic.lua
+09-15-19 21:00:26    Execute file2:H:\work_sangong\web\web\bin/logic/logic.lua
+09-15-19 21:00:38    Execute file2:H:\work_sangong\web\web\bin/logic/logic.lua
+09-15-19 21:01:30    Execute file2:H:\work_sangong\web\web\bin/logic/logic.lua
+09-15-19 21:01:30    stack traceback:
+	H:\work_sangong\web\web/core/helper.lua:92: in function <H:\work_sangong\web\web/core/helper.lua:91>
+	[builtin#25]: at 0x60ac3950
+	[C]: in function 'xpcall'
+	H:\work_sangong\web\web/core/helper.lua:913: in function <H:\work_sangong\web\web/core/helper.lua:911>
+	[C]: in function 'xpcall'
+	H:\work_sangong\web\web/core/helper.lua:120: in function <H:\work_sangong\web\web/core/helper.lua:119>
+	[C]: in function 'xpcall'
+	H:\work_sangong\web\web/core/helper.lua:162: in function <H:\work_sangong\web\web/core/helper.lua:161>
+09-15-19 21:01:44    Execute file2:H:\work_sangong\web\web\bin/logic/logic.lua
+09-15-19 21:01:44    stack traceback:
+	H:\work_sangong\web\web/core/helper.lua:92: in function <H:\work_sangong\web\web/core/helper.lua:91>
+	[builtin#25]: at 0x60ac3950
+	[C]: in function 'xpcall'
+	H:\work_sangong\web\web/core/helper.lua:913: in function <H:\work_sangong\web\web/core/helper.lua:911>
+	[C]: in function 'xpcall'
+	H:\work_sangong\web\web/core/helper.lua:120: in function <H:\work_sangong\web\web/core/helper.lua:119>
+	[C]: in function 'xpcall'
+	H:\work_sangong\web\web/core/helper.lua:162: in function <H:\work_sangong\web\web/core/helper.lua:161>
+09-15-19 21:02:02    Execute file2:H:\work_sangong\web\web\bin/logic/logic.lua
+09-15-19 21:02:02    stack traceback:
+	H:\work_sangong\web\web/core/helper.lua:92: in function <H:\work_sangong\web\web/core/helper.lua:91>
+	[builtin#25]: at 0x60ac3950
+	[C]: in function 'xpcall'
+	H:\work_sangong\web\web/core/helper.lua:913: in function <H:\work_sangong\web\web/core/helper.lua:911>
+	[C]: in function 'xpcall'
+	H:\work_sangong\web\web/core/helper.lua:120: in function <H:\work_sangong\web\web/core/helper.lua:119>
+	[C]: in function 'xpcall'
+	H:\work_sangong\web\web/core/helper.lua:162: in function <H:\work_sangong\web\web/core/helper.lua:161>
+09-15-19 21:02:25    Execute file2:H:\work_sangong\web\web\bin/logic/logic.lua
+09-15-19 21:03:00    Execute file2:H:\work_sangong\web\web\bin/logic/logic.lua
+09-15-19 21:03:07    Execute file2:H:\work_sangong\web\web\bin/logic/logic.lua
+09-15-19 21:03:18    Execute file2:H:\work_sangong\web\web\bin/logic/logic.lua
+09-15-19 21:59:28    Execute file2:H:\work_sangong\web\web\bin/logic/data.lua
+09-15-19 22:07:49    Execute file2:H:\work_sangong\web\web\bin/logic/logic.lua
+09-15-19 22:08:26    Execute file2:H:\work_sangong\web\web\bin/logic/logic.lua
+09-15-19 22:09:02    Execute file2:H:\work_sangong\web\web\bin/logic/logic.lua
+09-15-19 22:09:06    Execute file2:H:\work_sangong\web\web\bin/logic/logic.lua
+09-15-19 22:09:17    Execute file2:H:\work_sangong\web\web\bin/logic/logic.lua
+09-15-19 22:29:08    Execute file2:H:\work_sangong\web\web\bin/logic/logic.lua
+09-15-19 22:29:09    Execute file2:H:\work_sangong\web\web\bin/logic/logic.lua
+09-15-19 22:33:42    Execute file2:H:\work_sangong\web\web\bin/logic/logic.lua
+09-15-19 22:34:56    Execute file2:H:\work_sangong\web\web\bin/logic/logic.lua
+09-15-19 22:34:58    Execute file2:H:\work_sangong\web\web\bin/logic/logic.lua
+09-15-19 22:35:23    Execute file2:H:\work_sangong\web\web\bin/logic/logic.lua
+09-15-19 22:35:49    Execute file2:H:\work_sangong\web\web\bin/logic/logic.lua
+09-15-19 22:35:57    Execute file2:H:\work_sangong\web\web\bin/logic/logic.lua
+09-15-19 22:36:01    Execute file2:H:\work_sangong\web\web\bin/logic/logic.lua
+09-15-19 22:36:40    Execute file2:H:\work_sangong\web\web\bin/logic/logic.lua
+09-15-19 22:36:40    stack traceback:
+	H:\work_sangong\web\web/core/helper.lua:92: in function <H:\work_sangong\web\web/core/helper.lua:91>
+	[builtin#25]: at 0x60ac3950
+	[C]: in function 'xpcall'
+	H:\work_sangong\web\web/core/helper.lua:913: in function <H:\work_sangong\web\web/core/helper.lua:911>
+	[C]: in function 'xpcall'
+	H:\work_sangong\web\web/core/helper.lua:120: in function <H:\work_sangong\web\web/core/helper.lua:119>
+	[C]: in function 'xpcall'
+	H:\work_sangong\web\web/core/helper.lua:162: in function <H:\work_sangong\web\web/core/helper.lua:161>
+09-15-19 22:36:46    Execute file2:H:\work_sangong\web\web\bin/logic/logic.lua
+09-15-19 22:36:50    Execute file2:H:\work_sangong\web\web\bin/logic/logic.lua
+09-15-19 22:36:59    Execute file2:H:\work_sangong\web\web\bin/logic/logic.lua
+09-15-19 22:37:14    Execute file2:H:\work_sangong\web\web\bin/logic/logic.lua
+09-15-19 22:37:21    Execute file2:H:\work_sangong\web\web\bin/logic/logic.lua
+09-15-19 22:37:43    Execute file2:H:\work_sangong\web\web\bin/logic/logic.lua
+09-15-19 22:38:14    Execute file2:H:\work_sangong\web\web\bin/logic/logic.lua
+09-15-19 22:38:17    Execute file2:H:\work_sangong\web\web\bin/logic/logic.lua
+09-15-19 22:38:23    Execute file2:H:\work_sangong\web\web\bin/logic/logic.lua
+09-15-19 22:38:36    Execute file2:H:\work_sangong\web\web\bin/logic/logic.lua
+09-15-19 22:38:48    Execute file2:H:\work_sangong\web\web\bin/logic/logic.lua
+09-15-19 22:42:13    Execute file2:H:\work_sangong\web\web\bin/logic/data.lua
+09-15-19 22:42:36    Execute file2:H:\work_sangong\web\web\bin/logic/data.lua
+09-15-19 22:42:53    Execute file2:H:\work_sangong\web\web\bin/logic/logic.lua

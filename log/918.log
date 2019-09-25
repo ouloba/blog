@@ -1,0 +1,57 @@
+09-18-19 12:05:59   pathname: H:\work_sangong\web\web\bin/asset/style.css ext: css type: text/css 
+09-18-19 12:05:59     http_file:/styles/print/main.css abs:H:\work_sangong\web\web\bin/asset/styles/print/main.css/styles
+09-18-19 12:05:59    reply_send_file filename:H:\work_sangong\web\web\bin/asset/styles/print/main.css 130
+09-18-19 12:05:59   pathname: H:\work_sangong\web\web\bin/asset/styles/print/main.css ext: css type: text/css 
+09-18-19 12:05:59     http_file:/styles/print/core.css abs:H:\work_sangong\web\web\bin/asset/styles/print/core.css/styles
+09-18-19 12:05:59     http_file:/styles/reset/reset.css abs:H:\work_sangong\web\web\bin/asset/styles/reset/reset.css/styles
+09-18-19 12:05:59    reply_send_file filename:H:\work_sangong\web\web\bin/asset/styles/reset/reset.css 618
+09-18-19 12:05:59   pathname: H:\work_sangong\web\web\bin/asset/styles/reset/reset.css ext: css type: text/css 
+09-18-19 12:05:59     http_file:/fonts/fertigopro-webfont.woff abs:H:\work_sangong\web\web\bin/asset/fonts/fertigopro-webfont.woff/fonts
+09-18-19 12:06:00    HelperNetExecute:return ExecuteSQL({[1]=[[SELECT * FROM blogs.documents where id=2386443;]]})
+09-18-19 12:06:00    yield
+09-18-19 12:06:00    yield 2 ret:boolean str:string
+09-18-19 12:06:00    ExecuteSQLBatch, Time:2 threadid:20003 SQL:SELECT * FROM blogs.documents where id=2386443;
+ return_str:[{"post_status":"0","post_content":"<p style=\"box-sizing: inherit; margin-top: 16px; margin-bottom: 14px; line-height: 28px;\">YugaByte DB 是一个高性能、云原生的分布式 SQL 数据库。此版本包括 YSQL 的向后不兼容文件格式更改。这意味着，如果你有一个&nbsp;YSQL 模式的现有集群，在升级到 v1.3.1 之后，将无法连接到 YSQL 数据库。解决这个问题有两种方法：<\/p><ul style=\"box-sizing: inherit; padding: 0px 0px 0px 2.5em;\" class=\" list-paddingleft-2\"><li><p>如果你对是否保存现有数据不关心的话，那么可以删除旧集群，升级到 v1.3.1 并创建一个新集群<\/p><\/li><li><p>如果要继续使用现有数据，请保存旧数据(以 SQL 语句的形式)，删除旧群集，升级到 v1.3.1，创建新群集，然后加载先前保存的数据<\/p><\/li><\/ul><p style=\"box-sizing: inherit; margin-top: 16px; margin-bottom: 14px; line-height: 28px;\">YSQL 更改：<\/p><ul style=\"box-sizing: inherit; padding: 0px 0px 0px 2.5em;\" class=\" list-paddingleft-2\"><li><p>修复 &nbsp;nextval_internal 重试中的错误&nbsp;<\/p><\/li><li><p>支持&nbsp;COPY FROM 命令的大容量插入<\/p><\/li><li><p>支持触发器和扩展<\/p><\/li><li><p>支持 SELECT 的&nbsp;NULLS LAST&nbsp;<\/p><\/li><\/ul><p style=\"box-sizing: inherit; margin-top: 16px; margin-bottom: 14px; line-height: 28px;\">最近，YugabyteDB v1.3.1.2 的 SQL API 通过了 Jepsen 测试，YSQL 将应用到接下来即将发布 YugabyteDB v2.0 版本。&nbsp;关于 Jepsen 测试详情，请见参见博文，文中 Jepsen 测试的主要重点是测试分布式事务的新的可序列化隔离级别。<span style=\"box-sizing: inherit; font-weight: 700;\">通过这个 Jepsen 测试，YugabyteDB 就成为第一个在两个单独的 api 中两次通过 jepsen 的数据库。<\/span><\/p><p style=\"box-sizing: inherit; margin-top: 16px; margin-bottom: 14px; line-height: 28px;\"><a href=\"https:\/\/blog.yugabyte.com\/yugabyte-db-distributed-sql-api-passes-jepsen-tests\" target=\"_blank\" style=\"box-sizing: inherit; background-color: transparent; color: rgb(65, 131, 196); text-decoration-line: none;\">https:\/\/blog.yugabyte.com\/yugabyte-db-distributed-sql-api-passes-jepsen-tests<\/a><\/p><h3 style=\"box-sizing: inherit; line-height: 1.28571em; margin: 0px 0px 1rem; padding: 0px; font-size: 1.28571rem;\">相关链接<\/h3><ul class=\"link-list list-paddingleft-2\" style=\"list-style-type: square;\"><li><p>YugaByte DB 的详细介绍：<a href=\"https:\/\/www.oschina.net\/p\/yugabyte-db\" target=\"_blank\" style=\"box-sizing: inherit; background-color: transparent; color: rgb(65, 131, 196); text-decoration-line: none;\">点击查看<\/a><\/p><\/li><li><p>YugaByte DB 的下载地址：<a href=\"https:\/\/github.com\/YugaByte\/yugabyte-db\" target=\"_blank\" style=\"box-sizing: inherit; background-color: transparent; color: rgb(65, 131, 196); text-decoration-line: none;\">点击下载<\/a><\/p><\/li><\/ul><h3 style=\"box-sizing: inherit; font-family: helvetica, arial, sans-serif; line-height: 20px; margin: 0px; font-weight: normal; padding: 0px; font-size: 16px; color: rgb(0, 136, 204); zoom: 1; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; flex-direction: row;\"><\/h3><p><br\/><\/p><p><br\/><\/p>","category":"AI","post_date":"2019-09-07 20:55:30","post_title":"YugaByte DB 1.3.1 发布，云原生的分布式 SQL 数据库","post_author":"100013","read_count":"58","post_desc":"YugaByte DB 是一个高性能、云原生的分布式 SQL 数据库。此版本包括 YSQL 的向后不兼容文件格式更改。这意味着，如果你有一个 YSQL 模式的现有集群，在升级到 v1.3.1 之后，将无法连接到 YSQL 数据库。解决这个问题有两种方法：如果你对是否保存现有数据不关心的话，那么可以删除旧集群，升级到 v1.3.1 并创建一个新集群如果要继续使","id":"2386443","comment_count":"3"}]
+09-18-19 12:06:00    readfile:H:\work_sangong\web\web\bin/asset/html/article.html current dir:H:\work_sangong\web\web
+09-18-19 12:06:00    HelperNetExecute:return ExecuteSQL({[1]=[[update blogs.documents set read_count=read_count+1 where id=2386443;]]})
+09-18-19 12:06:00    ExecuteSQLBatch, Time:1 threadid:20003 SQL:update blogs.documents set read_count=read_count+1 where id=2386443;
+ return_str:nil
+09-18-19 12:06:00     http_file:/style.css abs:H:\work_sangong\web\web\bin/asset/style.css
+09-18-19 12:06:00    reply_send_file filename:H:\work_sangong\web\web\bin/asset/style.css 15075
+09-18-19 12:06:00   pathname: H:\work_sangong\web\web\bin/asset/style.css ext: css type: text/css 
+09-18-19 12:06:00     http_file:/styles/print/main.css abs:H:\work_sangong\web\web\bin/asset/styles/print/main.css/styles
+09-18-19 12:06:00    reply_send_file filename:H:\work_sangong\web\web\bin/asset/styles/print/main.css 130
+09-18-19 12:06:00   pathname: H:\work_sangong\web\web\bin/asset/styles/print/main.css ext: css type: text/css 
+09-18-19 12:06:00     http_file:/styles/reset/reset.css abs:H:\work_sangong\web\web\bin/asset/styles/reset/reset.css/styles
+09-18-19 12:06:00    reply_send_file filename:H:\work_sangong\web\web\bin/asset/styles/reset/reset.css 618
+09-18-19 12:06:00   pathname: H:\work_sangong\web\web\bin/asset/styles/reset/reset.css ext: css type: text/css 
+09-18-19 12:06:00     http_file:/styles/print/core.css abs:H:\work_sangong\web\web\bin/asset/styles/print/core.css/styles
+09-18-19 12:06:00     http_file:/fonts/fertigopro-webfont.woff abs:H:\work_sangong\web\web\bin/asset/fonts/fertigopro-webfont.woff/fonts
+09-18-19 12:06:00    HelperNetExecute:return ExecuteSQL({[1]=[[SELECT a.`id`,		
+		a.`userid`,
+		b.`nickname`,
+		b.`sex`,
+		a.`docid`,
+		a.`content`,
+		a.`parentid`,
+		a.`logtime`,
+		a.`like`,
+		a.`refuse`,
+	    a.`ip`
+	FROM `blogs`.`comments` as a,`blogs`.`accounts` as b  where  a.userid=b.userid and a.docid=2386443 order by a.logtime asc;]]})
+09-18-19 12:06:00    yield
+09-18-19 12:06:00    yield 2 ret:boolean str:string
+09-18-19 12:06:00    ExecuteSQLBatch, Time:3 threadid:20003 SQL:SELECT a.`id`,		
+		a.`userid`,
+		b.`nickname`,
+		b.`sex`,
+		a.`docid`,
+		a.`content`,
+		a.`parentid`,
+		a.`logtime`,
+		a.`like`,
+		a.`refuse`,
+	    a.`ip`
+	FROM `blogs`.`comments` as a,`blogs`.`accounts` as b  where  a.userid=b.userid and a.docid=2386443 order by a.logtime asc;
+ return_str:[{"docid":"2386443","logtime":"2019-09-16 18:45:13","nickname":"赖上你","sex":"2","like":"2","parentid":"0","content":"YugabyteDB 就成为第一个在两个单独的 api 中两次通过 jepsen 的数据库","ip":"192.168.2.217","refuse":"2","userid":"100013","id":"14"},{"docid":"2386443","logtime":"2019-09-16 18:46:16","nickname":"赖上你","sex":"2","like":"2","parentid":"0","content":"通过这个 Jepsen 测试","ip":"192.168.2.217","refuse":"3","userid":"100013","id":"15"},{"docid":"2386443","logtime":"2019-09-16 23:38:29","nickname":"将进酒","sex":"1","like":"0","parentid":"0","content":"哈哈哈","ip":"192.168.2.217","refuse":"2","userid":"100015","id":"16"}]
+09-18-19 12:06:00    readfile:H:\work_sangong\web\web\bin/asset/html/comment.html current dir:H:\work_sangong\web\web

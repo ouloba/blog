@@ -1,0 +1,52 @@
+09-20-19 18:07:52    HelperGetFileContent:H:\work_sangong\web\web/core/coreodbc.lua
+09-20-19 18:07:52    Init LuaThread:20006 3226
+09-20-19 18:07:52    path:2e5c3f2e646c6c3b483a5c776f726b5f73616e676f6e675c7765625c7765625c62696e5c3f2e646c6c3b483a5c776f726b5f73616e676f6e675c7765625c7765625c62696e5c6c6f6164616c6c2e646c6c DB_IP:192.168.2.217
+09-20-19 18:07:52    SetGlobalVariable:DB_IP='192.168.2.217'
+09-20-19 18:07:52    SetGlobalVariable:DB_PWD='123456'
+09-20-19 18:07:52    SetGlobalVariable:DB_ACCOUNT='root'
+09-20-19 18:07:52    SetGlobalVariable:DB_NAME='blogs'
+09-20-19 18:07:52    HelperNetExecute:return SetPackageCPath('2e5c3f2e646c6c3b483a5c776f726b5f73616e676f6e675c7765625c7765625c62696e5c3f2e646c6c3b483a5c776f726b5f73616e676f6e675c7765625c7765625c62696e5c6c6f6164616c6c2e646c6c')
+09-20-19 18:07:52    yield
+09-20-19 18:07:52    yield 2 ret:boolean str:string
+09-20-19 18:07:52    HelperNetExecute:return ExecuteSQL({[1]=[[SELECT a.`id`,
+    a.`post_title`,
+    a.`post_status`,
+    a.`category`,
+    a.`post_desc`,
+	a.`read_count`,
+	a.`comment_count`
+	FROM `blogs`.`documents` as a  where a.post_status=0 order by a.read_count desc limit 0,20;]]})
+09-20-19 18:07:52    yield
+09-20-19 18:07:52    yield 2 ret:boolean str:string
+09-20-19 18:07:52    ExecuteSQLBatch, Time:5 threadid:20006 SQL:SELECT a.`id`,
+    a.`post_title`,
+    a.`post_status`,
+    a.`category`,
+    a.`post_desc`,
+	a.`read_count`,
+	a.`comment_count`
+	FROM `blogs`.`documents` as a  where a.post_status=0 order by a.read_count desc limit 0,20;
+ return_str:[{"post_desc":"YugaByte DB 是一个高性能、云原生的分布式 SQL 数据库。此版本包括 YSQL 的向后不兼容文件格式更改。这意味着，如果你有一个 YSQL 模式的现有集群，在升级到 v1.3.1 之后，将无法连接到 YSQL 数据库。解决这个问题有两种方法：如果你对是否保存现有数据不关心的话，那么可以删除旧集群，升级到 v1.3.1 并创建一个新集群如果要继续使","post_status":"0","id":"2386443","category":"AI","read_count":"60","post_title":"YugaByte DB 1.3.1 发布，云原生的分布式 SQL 数据库","comment_count":"3"},{"post_desc":"Python 中的sys 模块极为基础而重要，它主要提供了一些给解释器使用（或由它维护）的变量，以及一些与解释器强交互的函数。本文将会频繁地使用该模块的getsizeof() 方法，因此，我先简要介绍一下：该方法用于获取一个对象的字节大小（bytes）它只计算直接占用的内存，而不计算对象内所引用对象的内存这里有个直观的例子：import sysa = [1,","post_status":"0","id":"2386442","category":"AI","read_count":"6","post_title":"对于那些没有充分解释的小秘密，今后我们再慢慢揭秘","comment_count":"2"},{"post_desc":"Python 中的sys 模块极为基础而重要，它主要提供了一些给解释器使用（或由它维护）的变量，以及一些与解释器强交互的函数。本文将会频繁地使用该模块的getsizeof() 方法，因此，我先简要介绍一下：该方法用于获取一个对象的字节大小（bytes）它只计算直接占用的内存，而不计算对象内所引用对象的内存这里有个直观的例子：import sysa = [1,","post_status":"0","id":"2386441","category":"转载","read_count":"0","post_title":"对于那些没有充分解释的小秘密，今后我们再慢慢揭秘","comment_count":"2"}]
+09-20-19 18:07:52    HelperGetFileContent:H:\work_sangong\web\web/core/coreodbc.lua
+09-20-19 18:07:52    Init LuaThread:20009 3226
+09-20-19 18:07:52    path:2e5c3f2e646c6c3b483a5c776f726b5f73616e676f6e675c7765625c7765625c62696e5c3f2e646c6c3b483a5c776f726b5f73616e676f6e675c7765625c7765625c62696e5c6c6f6164616c6c2e646c6c DB_IP:192.168.2.217
+09-20-19 18:07:52    SetGlobalVariable:DB_IP='192.168.2.217'
+09-20-19 18:07:52    SetGlobalVariable:DB_PWD='123456'
+09-20-19 18:07:52    SetGlobalVariable:DB_ACCOUNT='root'
+09-20-19 18:07:52    SetGlobalVariable:DB_NAME='blogs'
+09-20-19 18:07:52    HelperNetExecute:return SetPackageCPath('2e5c3f2e646c6c3b483a5c776f726b5f73616e676f6e675c7765625c7765625c62696e5c3f2e646c6c3b483a5c776f726b5f73616e676f6e675c7765625c7765625c62696e5c6c6f6164616c6c2e646c6c')
+09-20-19 18:07:52    yield
+09-20-19 18:07:52    yield 2 ret:boolean str:string
+09-20-19 18:07:52    HelperNetExecute:return ExecuteSQL({[1]=[[SELECT * FROM blogs.bookmarks order by `order` desc;]]})
+09-20-19 18:07:52    yield
+09-20-19 18:07:52    yield 2 ret:boolean str:string
+09-20-19 18:07:52    ExecuteSQLBatch, Time:2 threadid:20009 SQL:SELECT * FROM blogs.bookmarks order by `order` desc;
+ return_str:[{"order":"2","logtime":"2019-09-18 12:55:53","id":"2","url":"https:\/\/www.runoob.com\/docker\/docker-image-usage.html","name":"Docker使用教程"},{"order":"1","logtime":"2019-09-18 12:55:53","id":"1","url":"https:\/\/www.tensorflow.org\/beta","name":"Tensorflow中文教程"}]
+09-20-19 18:07:52    HelperNetExecute:return ExecuteSQL({[1]=[[SELECT count(1) as cnt FROM blogs.documents as a where a.post_status=0 ;]]})
+09-20-19 18:07:52    yield
+09-20-19 18:07:52    yield 2 ret:boolean str:string
+09-20-19 18:07:52    ExecuteSQLBatch, Time:13 threadid:20003 SQL:SELECT count(1) as cnt FROM blogs.documents as a where a.post_status=0 ;
+ return_str:
+09-20-19 18:47:36    Execute file2:H:\work_sangong\web\web\bin/logic/logic.lua
+09-20-19 18:48:08    Execute file2:H:\work_sangong\web\web\bin/logic/logic.lua
+09-20-19 18:48:28    Execute file2:H:\work_sangong\web\web\bin/logic/logic.lua
